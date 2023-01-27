@@ -1,27 +1,19 @@
-import Navbar from "./Navbar";
-import Heroheader from "./Heroheader";
-import Newsletter from "./Newsletter";
-import LearnSections from "./LearnSections";
-import Lead from "./lead";
-import Boxes from "./Boxes";
-import Question from "./Question";
-import Instructors from "./instructors";
-import Footer from "./Footer";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./Pages/Home/Home";
+import Login from "./Pages/Login/Login";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar />
-        <Heroheader />
-        <Newsletter />
-        <Boxes />
-        <LearnSections />
-        <Lead />
-        <Question />
-        <Instructors />
-        <Footer />
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/login">
+            <Login />
+          </Route>
+        </Switch>
       </Router>
     </div>
   );

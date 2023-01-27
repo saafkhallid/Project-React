@@ -40,6 +40,14 @@ const Navbar = () => {
                   Instructors
                 </a>
               </li>
+              <li className="nav-item ">
+                <a
+                  href="#instructors"
+                  className="nav-link btn text-white btn-warning fw-bold "
+                >
+                  Login
+                </a>
+              </li>
             </ul>
           </div>
         </div>
