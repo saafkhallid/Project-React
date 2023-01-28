@@ -1,9 +1,9 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Login = () => {
   return (
     <div>
-      <div classNameName="container-fluid">
+      <div className="container-fluid">
         <div className="vh-100 d-flex justify-content-center align-items-center">
           <div className="container">
             <div className="row d-flex justify-content-center">
@@ -46,12 +46,13 @@ const Login = () => {
                         </a>
                       </p>
                       <div className="d-grid">
-                        <button
+                        <Link
                           className="btn fw-bold btn-outline-warning"
                           type="submit"
+                          to="/"
                         >
                           Login
-                        </button>
+                        </Link>
                       </div>
                     </form>
                   </div>

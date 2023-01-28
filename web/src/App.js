@@ -1,8 +1,7 @@
 import Home from "./Pages/Home/Home";
 import Login from "./Pages/Login/Login";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Router>
@@ -17,6 +16,6 @@ function App() {
       </Router>
     </div>
   );
-}
+};
 
 export default App;

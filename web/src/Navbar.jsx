@@ -1,15 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div>
       <nav className="navbar navbar-expand-lg bg-light  navbar-light py-2 fixed-top border-bottom border-warning">
         <div className="container ">
-          <a
-            href="#"
+          <Link
+            to="#"
             className="navbar-brand  text-dark text-uppercase fw-bold"
           >
             Port<span className="text-warning">folio</span>
-          </a>
+          </Link>
           <button
             className="navbar-toggler "
             type="button"
@@ -21,32 +22,32 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navmenu">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item ">
-                <a href="#learn" className="nav-link">
+                <Link to="#learn" className="nav-link">
                   About
-                </a>
+                </Link>
               </li>
               <li className="nav-item ">
-                <a href="#questions" className="nav-link">
+                <Link to="#questions" className="nav-link">
                   Accuill
-                </a>
+                </Link>
               </li>
               <li className="nav-item ">
-                <a href="#instructors" className="nav-link">
+                <Link to="#instructors" className="nav-link">
                   Service
-                </a>
+                </Link>
               </li>
               <li className="nav-item ">
-                <a href="#instructors" className="nav-link">
+                <Link to="#instructors" className="nav-link">
                   Instructors
-                </a>
+                </Link>
               </li>
               <li className="nav-item ">
-                <a
-                  href="#instructors"
+                <Link
+                  to="#instructors"
                   className="nav-link btn text-white btn-warning fw-bold "
                 >
                   Login
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
